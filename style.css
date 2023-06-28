@@ -1,0 +1,421 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sectionSvg .informationButton {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sectionSvg {
+  border-right: 1px solid rgb(38, 36, 36);
+}
+
+.sectionSvg .instagramSvg {
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+}
+
+.sectionSvg button {
+  background: none;
+  border: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1rem;
+}
+
+.informationButton button svg,
+.masbutton svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.masbutton {
+  display: flex;
+  justify-content: center;
+  float: left;
+  text-align: right;
+}
+
+.instagramSvg {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 10px;
+}
+
+.perfil .foto {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  gap: 30px;
+}
+
+.foto {
+  width: 26px;
+  height: 26px;
+  border-radius: 20px;
+}
+
+.masbutton .menu {
+  padding: 4rem 0;
+}
+
+.fotoDePerfil {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #eee;
+  position: relative;
+  margin: 0 auto;
+}
+.fotoDePerfil img {
+  border-radius: 50%;
+}
+.fotoDePerfil::after {
+  display: block;
+  border-radius: 50%;
+  content: "";
+  width: 108%;
+  height: 108%;
+  position: absolute;
+  z-index: -1;
+  left: -4%;
+  top: -4%;
+  background-image: conic-gradient(
+    #e1306c,
+    #e1306c,
+    #f56040,
+    #fcaf45,
+    #ffdc80,
+    #f56040,
+    #fd1d1d
+  );
+}
+.nombreDeUsuario {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 74px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 7px 0 0;
+}
+
+.stories {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  max-width: 550px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.storie {
+  text-align: center;
+}
+
+.section2 {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.post {
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto;
+}
+.post_header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 0 12px 0;
+}
+.post_media img {
+  max-height: 585px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.post_header img {
+  border-radius: 60%;
+  width: 100%;
+  max-width: 32px;
+  height: 32px;
+}
+
+.nombre_usuario {
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre_usuario a {
+  text-decoration: none;
+  color: #8c8c8c;
+  font-size: 10px;
+}
+
+.nombre_usuario h6 {
+  margin: 0;
+}
+
+.descripcion h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.descripcion p {
+  font-size: 11px;
+  margin: 0;
+}
+
+.descripcion {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.iconos-svg svg {
+  fill: rgb(245, 245, 245);
+  height: 24px;
+  width: 24px;
+  width: 100%;
+  max-width: 24px;
+}
+
+.iconos-svg {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.guardar {
+  margin-left: auto;
+}
+.numeroDeGusta {
+  margin: 0;
+  font-size: 13px;
+  padding: 0 0 0 10px;
+}
+
+.post-comentario {
+  display: flex;
+  margin-top: 20px;
+}
+
+.post-comentario svg {
+  fill: #fff;
+  width: 100%;
+  max-width: 24px;
+  margin-left: auto;
+}
+
+.post-comentario input {
+  background-color: transparent;
+  color: #fff;
+  border: none !important;
+  outline: none !important;
+}
+
+.section3 {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  width: 100%;
+  max-width: 250px;
+}
+
+.mi-cuenta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mi-cuenta img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.cuenta-usuario h2 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.cuenta-usuario h4 {
+  font-size: 10px;
+  margin: 0;
+  color: #8c8c8c;
+}
+
+.cuenta-usuario {
+  flex: 1;
+}
+
+.mi-cuenta button {
+  font-size: 12px;
+  color: #2284e6;
+  font-weight: 400;
+  background: none;
+  border: 0;
+}
+
+.sugerencia-para-seguir h1 {
+  font-size: 13px;
+  color: #8c8c8c;
+}
+
+.sugerencia-para-seguir button {
+  font-weight: 300;
+  background: none;
+  font-size: 13px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sugerencia-para-seguir button:hover {
+  color: #8c8c8c;
+}
+
+.ver-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sugerencia img {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.sugerencia {
+  display: flex;
+}
+
+.mi-cuenta button {
+  color: #2284e6;
+  cursor: pointer;
+}
+
+.mi-cuenta button:hover {
+  color: #fff;
+}
+
+.following {
+  color: #fff !important;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  color: #8c8c8c;
+  gap: 3px;
+}
+
+.links a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #4d4b4b;
+}
+.links select {
+  background: none;
+  border: none;
+  color: #4d4b4b;
+  padding: 0;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.button-footer p {
+  font-size: 12px;
+  color: #4d4b4b;
+}
+
+.button-footer {
+  padding: 3rem 0;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  background-color: #262626;
+  color: #eee;
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 32px auto;
+}
+
+.modal p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.modal button {
+  font-weight: 600;
+  background: none;
+  font-size: 12px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  border-top: 1px solid rgb(54, 54, 54);
+  text-align: center;
+  padding: 4px 8px;
+  min-height: 48px;
+}
+
+.dejar-seguir {
+  color: rgb(237, 73, 86) !important;
+}
+
+.oculto {
+  display: none !important;
+}
